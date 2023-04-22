@@ -1,0 +1,370 @@
+/* for Whole Document */
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    user-select: none;
+}
+
+/* for whole container */
+.container {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+/* for heading */
+.head {
+    background-color: #083a10;
+    height: 14%;
+    text-align: right;
+}
+
+.head h1 {
+    color: #45f123;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding-top: 5px;
+    text-shadow: -1px -2px 2px #dbf304;
+}
+
+/* for display body */
+.content {
+    height: 85vh;
+    display: block;
+    background-image: radial-gradient(#035303 20%,#035c03);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* for home page image */
+#indexPic {
+    height: 70vh;
+    width: 120vh;
+    margin: auto;
+}
+
+/* for different calculator */
+#compound,
+#simple,
+#degtoRad,
+#areaOfTrape,
+#areaOfParallel {
+    height: 500px;
+    width: 400px;
+    margin: auto;
+    background-image: linear-gradient(#049204, #548608);
+    border-radius: 0 0 10px 10px;
+    box-shadow: 2px 2px 5px lightgreen, -2px 0px 5px rgb(241, 203, 131);
+    display: none;
+    padding-top: 2px;
+}
+
+/* for calculator name heading */
+h5 {
+    margin-bottom: 15px;
+    font-size: 25px;
+    text-shadow: -0.5px -0.5px 0.5px #eeee79;
+}
+
+/* for label and button and input field */
+label,
+button,
+input {
+    margin: 8px;
+
+}
+
+/* for label  */
+label {
+    font-weight: bold;
+    font-size: 23px;
+}
+
+/* for input field */
+input {
+    padding: 8px 14px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 3px #083a10;
+    width: 250px;
+    font-size: 18px;
+}
+
+/* For Calculation Button */
+.result {
+    color: #0e0d0d;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 2px 2px 3px #D0E3CC;
+    font-weight: bold;
+}
+
+/* for calculate button */
+button:hover {
+    background-color: #083a10;
+    color: white;
+}
+
+/* for output */
+.output {
+    color: #0e0d0d;
+    font-weight: bold;
+    border: #083a10 2px solid;
+    background-color: aquamarine;
+    margin: 10px;
+    height: 20%;
+    border-radius: 10px;
+    align-items: baseline;
+    padding-top: 10px;
+}
+
+/* for Selection Menu */
+select {
+    color: #01330a;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#simpleCalculator input {
+    display: grid;
+    grid-column: span 4;
+    text-align: right;
+    height: 100px;
+    border-radius: 10px;
+    font-size: 50px;
+    width: auto;
+}
+
+#simpleCalculator {
+    height: 500px;
+    width: 400px;
+    margin: auto;
+    background-color: #208825;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px lightgreen, -2px 0px 5px rgb(241, 203, 131);
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    padding: 10px;
+    display: none;
+}
+
+.first {
+    background-color: greenyellow;
+}
+
+.symbol {
+    background-color: rgb(209, 209, 4);
+}
+
+button {
+    border-radius: 50px;
+    border: none;
+    margin: 3px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.calc button:active {
+    background-color: grey;
+}
+
+@media screen and (max-width: 800px) and (min-width: 400px) {
+
+    /* for whole container */
+    .container {
+        font-size: 18px;
+    }
+
+    /* for heading */
+    .head {
+        height: 14%;
+        text-align: right;
+    }
+
+    /* for title */
+    .head h1 {
+        font-size: 40px;
+        padding-top: 1px;
+        text-shadow: -1px -1px 1px #dbf304;
+    }
+
+    /* for home page image */
+    #indexPic {
+        height: 70vh;
+        width: 100%;
+        margin: auto;
+    }
+
+    /* for different calculator */
+    #compound,
+    #simple,
+    #degtoRad,
+    #areaOfTrape,
+    #areaOfParallel {
+        height: 400px;
+    }
+
+    /* for calculator name heading */
+    h5 {
+        margin-bottom: 5px;
+        font-size: 22px;
+
+    }
+
+    .output {
+        margin-top: 0;
+    }
+
+    /* for label and button and input field */
+    label,
+    button,
+    input {
+        margin: 5px;
+    }
+
+    /* for label  */
+    label {
+        font-size: 20px;
+    }
+
+    /* for input field */
+    input {
+        border: none;
+        box-shadow: 2px 2px 3px #083a10;
+    }
+
+    /* For Calculation Button */
+    .result {
+        font-size: 18px;
+    }
+
+    /* for Selection Menu */
+    select {
+        color: #01330a;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    /* for simple Calculator input */
+    #simpleCalculator input {
+        height: 80px;
+        font-size: 50px;
+    }
+
+    /* for simple Calculator */
+    #simpleCalculator {
+        height: 420px;
+        width: 350px;
+    }
+
+    /* for simple Calculator button */
+    button {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    /* for whole container */
+    .container {
+        font-size: 15px;
+    }
+
+    /* for heading */
+    .head {
+        height: 11%;
+    }
+
+    .head h1 {
+        font-size: 25px;
+        padding-top: 1px;
+        text-shadow: -1px -1px 1px #dbf304;
+    }
+
+    /* for home page image */
+    #indexPic {
+        height: 60vh;
+        width: 100%;
+    }
+
+    /* for different calculator */
+    #compound,
+    #simple,
+    #degtoRad,
+    #areaOfTrape,
+    #areaOfParallel {
+        height: 400px;
+        width: 270px;
+        border-radius: 0 0 5px 5px;
+    }
+
+    /* for calculator name heading */
+    h5 {
+        margin-bottom: 5px;
+        font-size: 21px;
+        text-shadow: -0.5px -0.5px 0.5px #eeee79;
+    }
+
+    /* for label and button and input field */
+    label,
+    button,
+    input {
+        margin: 3px;
+    }
+
+    /* for label  */
+    label {
+        font-weight: bold;
+        font-size: 19px;
+    }
+
+    /* for input field */
+    input {
+        padding: 6px 8px;
+        border-radius: 2px;
+        width: 200px;
+        font-size: 18px;
+    }
+
+    /* For Calculation Button */
+    .result {
+        padding: 2px;
+        font-size: 18px;
+    }
+
+    /* for output */
+    .output {
+        font-size: 15px;
+    }
+
+    /* for Selection Menu */
+    select {
+        font-size: 17px;
+        margin: 5px 5px 0;
+    }
+
+    /* for calulator screen */
+    #simpleCalculator input {
+        height: 100px;
+        border-radius: 10px;
+        font-size: 50px;
+        width: auto;
+    }
+
+    #simpleCalculator {
+        height: 400px;
+        width: 270px;
+        padding: 2px;
+    }
+
+    button {
+        border-radius: 30px;
+        font-size: 20px;
+    }
+}

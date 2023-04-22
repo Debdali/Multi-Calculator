@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Multi-Cal-CSS.css">
+    <title>Multi-Calculator</title>
+</head>
+
+<body>
+    <!-- container div -->
+    <div class="container">
+        <!-- heading -->
+        <div class="head">
+            <h1 class="title">Multi - Calculator</h1>
+            <!-- selecting menu for different calculator -->
+            <select id="selectCal" name="calculator">
+                <option value="" selected>--select calculator</option>
+                <option value="compound" >Compound Interest</option>
+                <option value="simple">Simple Interest</option>
+                <option value="DegtoRad">Degree to Radian</option>
+                <option value="areaOfTrape">Area of Trapezoid</option>
+                <option value="areaOfParallel">Area of Parallelogram</option>
+                <option value="simpleCalculator">Simple Calculator</option>
+            </select>
+            
+        </div>
+        <!-- display body for show each calculator -->
+        <div class="content">
+            <!-- Home picture -->
+            <img id="indexPic" src="Calculation.png">
+            <!-- for compound interest -->
+            <div id="compound">
+                <h5>Calculation of Compound Interest</h5>
+                <label>Principal Amount</label>
+                <input id="principal" type="number" placeholder="Enter Principal Amount" min="1"><br>
+                <label>Rate of Interest</label>
+                <input id="rateofint" type="number" placeholder="Interest Rate" min="1"><br>
+                <label>No of Years</label>
+                <input id="noofyear" type="number" placeholder="Number of Years" min="1"><br>
+                <button onclick="calcompoundint()" type="button" class="result">Calculate</button>
+                <p class="output" id="compoundresult"></p>
+            </div>
+
+            <!-- for Simple Interest -->
+            <div id="simple">
+                <h5>Calculation of Simple<br>Interest</h5>
+                <label>Principal Amount</label><br>
+                <input id="simpleprin" type="number" placeholder="Enter Principal Amount" min="1"><br>
+                <label>Interest Rate</label>
+                <input id="simpleintrate" type="number" placeholder="Interest Rate" min="1"><br>
+                <label>No of Years</label>
+                <input id="simplenoofyears" type="number" placeholder="Number of Years" min="1"><br>
+                <button onclick="calsimpleint()" class="result">Calculate</button>
+                <p class="output" id="ans"></p>
+            </div>
+
+            <!-- for degree to Radian Calculator -->
+            <div id="degtoRad">
+                 <h5>Convert  Degree to Radian</h5>   
+                <label>Degree</label><br>
+                <input id= "degree" type="number" placeholder="Enter Degree"><br>                
+                <button onclick="convertDegtoRad()" type="button" class="result">Calculate</button>
+                <p class="output" id="resultDegtoRad"></p>   
+            </div>
+
+            <!-- for find area of Trapezoid -->
+            <div id="areaOfTrape">            
+                <h5>Calculation of Area of Trapezoid</h5>   
+                <label>Length of Base 1</label>
+                <input id= "base1" type="number" placeholder="Enter Base 1 length"><br>
+                <label>Length of Base 2</label>
+                <input id = "base2" type="number" placeholder="Enter Base 2 length"><br>
+                <label>Height of Trapezoid</label>
+                <input id = "t_height" type="number" placeholder="Enter height"><br>
+                 <button  onclick="areaOfTrape()" type="button" class="result">Calculate</button>
+                <p class="output" id="area_trapezoid"></p>   
+            </div>  
+
+            <!-- for find Area of Parallelogram -->
+            <div id="areaOfParallel">
+                <h5>Calculate the Area of Parallelogram</h5>   
+               <label>Length of Base</label>
+               <input id= "parallel_base" type="number" placeholder="Enter length"><br>
+               <label>Length of Height</label>
+               <input id = "parallel_height" type="number" placeholder="Enter Height"><br>            
+               <button  onclick="areaOfParallel()" type="button" class="result">Calculate</button>
+               <p class="output" id="area_parallel"></p>   
+            </div> 
+            
+            
+            <div class="calc" id="simpleCalculator" >
+                <h5>Calculator</h5>
+                <input type = "text" placeholder="0" id="screen">
+                <button class="first" onclick="allclear()">AC</button>
+                <button class="first" onclick="clear()">C</button>
+                <button class="first" onclick="show('%')">%</button>
+                <button class="first" onclick="show('/')">&divide;</button>
+                <button onclick="show('7')">7</button>
+                <button onclick="show('8')">8</button>
+                <button onclick="show('9')">9</button>
+                <button class="symbol" onclick="show('-')">-</button>
+                <button onclick="show('4')">4</button>
+                <button onclick="show('5')">5</button>
+                <button onclick="show('6')">6</button>
+                <button class="symbol" onclick="show('*')">&times;</button>
+                <button onclick="show('1')">1</button>
+                <button onclick="show('2')">2</button>
+                <button onclick="show('3')">3</button>
+                <button class="symbol" onclick="show('+')">+</button>
+                <button onclick="show('00')">00</button>
+                <button onclick="show('0')">0</button>
+                <button onclick="show('.')">.</button>
+                <button class="symbol" onclick="cal()">=</button>
+            </div>
+           
+        </div>
+
+        <script src="Muti-Cal-JS.js"></script>
+</body>
+
+</html>

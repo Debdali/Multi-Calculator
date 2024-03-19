@@ -19,17 +19,13 @@
                 <option value="" selected>--select calculator</option>
                 <option value="compound" >Compound Interest</option>
                 <option value="simple">Simple Interest</option>
-                <option value="DegtoRad">Degree to Radian</option>
-                <option value="areaOfTrape">Area of Trapezoid</option>
-                <option value="areaOfParallel">Area of Parallelogram</option>
-                <option value="simpleCalculator">Simple Calculator</option>
             </select>
             
         </div>
         <!-- display body for show each calculator -->
         <div class="content">
             <!-- Home picture -->
-            <img id="indexPic" src="Digit Calculator.jpeg">
+            <img id="indexPic" src="vmeo.gif">
             <!-- for compound interest -->
             <div id="compound">
                 <h5>Calculation of Compound Interest</h5>
@@ -56,38 +52,7 @@
                 <p class="output" id="ans"></p>
             </div>
 
-            <!-- for degree to Radian Calculator -->
-            <div id="degtoRad">
-                 <h5>Convert  Degree to Radian</h5>   
-                <label>Degree</label><br>
-                <input id= "degree" type="number" placeholder="Enter Degree"><br>                
-                <button onclick="convertDegtoRad()" type="button" class="result">Calculate</button>
-                <p class="output" id="resultDegtoRad"></p>   
-            </div>
-
-            <!-- for find area of Trapezoid -->
-            <div id="areaOfTrape">            
-                <h5>Calculation of Area of Trapezoid</h5>   
-                <label>Length of Base 1</label>
-                <input id= "base1" type="number" placeholder="Enter Base 1 length"><br>
-                <label>Length of Base 2</label>
-                <input id = "base2" type="number" placeholder="Enter Base 2 length"><br>
-                <label>Height of Trapezoid</label>
-                <input id = "t_height" type="number" placeholder="Enter height"><br>
-                 <button  onclick="areaOfTrape()" type="button" class="result">Calculate</button>
-                <p class="output" id="area_trapezoid"></p>   
-            </div>  
-
-            <!-- for find Area of Parallelogram -->
-            <div id="areaOfParallel">
-                <h5>Calculate the Area of Parallelogram</h5>   
-               <label>Length of Base</label>
-               <input id= "parallel_base" type="number" placeholder="Enter length"><br>
-               <label>Length of Height</label>
-               <input id = "parallel_height" type="number" placeholder="Enter Height"><br>            
-               <button  onclick="areaOfParallel()" type="button" class="result">Calculate</button>
-               <p class="output" id="area_parallel"></p>   
-            </div> 
+           
             
             
             <div class="calc" id="simpleCalculator" >

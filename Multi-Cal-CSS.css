@@ -16,25 +16,25 @@
 
 /* for heading */
 .head {
-    background-color: #083a10;
+    background-color: rgba(255, 255, 255, 0.431);
     height: 14%;
     text-align: right;
 }
 
 .head h1 {
-    color: #f12398;
+    color: black;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Garamond, serif;
     font-size: 50px;
     padding-top: 5px;
-    text-shadow: -1px -2px 2px #dbf304;
+    text-shadow: -1px -2px 2px grey;
 }
 
 /* for display body */
 .content {
     height: 85vh;
     display: block;
-    background-image: radial-gradient(#035303 20%,#035c03);
+    background-image: #05090a;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -42,22 +42,20 @@
 /* for home page image */
 #indexPic {
     height: 70vh;
-    width: 120vh;
+    width: 70vh;
     margin: auto;
 }
 
 /* for different calculator */
 #compound,
-#simple,
-#degtoRad,
-#areaOfTrape,
-#areaOfParallel {
+#simple
+{
     height: 500px;
     width: 400px;
     margin: auto;
-    background-image: linear-gradient(#049204, #548608);
+    background-image: linear-gradient(#9dac9d, #e8ffc4);
     border-radius: 0 0 10px 10px;
-    box-shadow: 2px 2px 5px lightgreen, -2px 0px 5px rgb(241, 203, 131);
+    box-shadow: 2px 2px 5px rgb(137, 137, 137), -2px 0px 5px rgb(157, 155, 150);
     display: none;
     padding-top: 2px;
 }
@@ -114,7 +112,7 @@ button:hover {
     color: #0e0d0d;
     font-weight: bold;
     border: #083a10 2px solid;
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
     margin: 10px;
     height: 20%;
     border-radius: 10px;
@@ -135,7 +133,7 @@ select {
     grid-column: span 4;
     text-align: right;
     height: 100px;
-    border-radius: 10px;
+    border-radius: 50px;
     font-size: 50px;
     width: auto;
 }
@@ -144,7 +142,7 @@ select {
     height: 500px;
     width: 400px;
     margin: auto;
-    background-color: #208825;
+    background-color: #cafacc;
     border-radius: 10px;
     box-shadow: 2px 2px 5px lightgreen, -2px 0px 5px rgb(241, 203, 131);
     grid-template-columns: repeat(4, 1fr);
@@ -203,9 +201,7 @@ button {
     /* for different calculator */
     #compound,
     #simple,
-    #degtoRad,
-    #areaOfTrape,
-    #areaOfParallel {
+     {
         height: 400px;
     }
 
@@ -245,7 +241,7 @@ button {
 
     /* for Selection Menu */
     select {
-        color: #01330a;
+        color: #898b89;
         font-size: 18px;
         font-weight: bold;
         margin-right: 10px;

@@ -16,51 +16,8 @@ function calcompoundint() {
 };
 
 
-//for Degree to Radian
 
-function convertDegtoRad() {
-    let degreeRadius = document.getElementById("degree").value;
-    let pi = (3.14159);
-    if (degreeRadius===""){
-        document.getElementById("resultDegtoRad").innerHTML = "Invalid Number";
-        // error for invalid and empty entry
-    }
-    else {
-    let radian = parseFloat(degreeRadius)*(pi/180); 
-    document.getElementById("resultDegtoRad").innerHTML = "Radian for "+degreeRadius+"\u00b0 is : "+radian.toFixed(3,0)+" rad";    
-    }    
-};
 
-//Script for Area of Trapezoid  
-
-function areaOfTrape(){
-    let b1 = document.getElementById("base1").value;
-    let b2 = document.getElementById("base2").value;
-    let h = document.getElementById("t_height").value;
-    if (b1>0 && b2>0 && h>0){
-    let a = ( (Number(b1) + Number(b2) ) / 2 )* Number (h);
-    document.getElementById("area_trapezoid").innerHTML = "Area of Trapezoid is : "+ a.toFixed(2,0) ;
-    }
-    else {
-    document.getElementById("area_trapezoid").innerHTML = "Invalid Number"
-    // error for invalid and empty entry
-    }
-}; 
-
-//Script for Area of Parallogram
-
-function areaOfParallel() {
-    let b = document.getElementById("parallel_base").value;
-    let h = document.getElementById("parallel_height").value;
-    if (b>0 && h>0){
-    let a = Number(b) * Number(h);
-    document.getElementById("area_parallel").innerHTML = "Area of Parallelogram is : "+ a.toFixed (2,0);
-    }
-    else {
-    document.getElementById("area_parallel").innerHTML = "Invalid Number"
-    // error for invalid and empty entry
-    }
-};
 
 //Script for Simple Calculator
 function calsimpleint() {
@@ -103,10 +60,7 @@ calculatorEl.addEventListener("change", ()=>{
     const optionvalue = calculatorEl.value;    
     const compounddiv = document.getElementById("compound")
     const simplediv = document.getElementById("simple")
-    const indexPic = document.getElementById("indexPic")
-    const degtoRad = document.getElementById("degtoRad")
-    const areaOfTrape = document.getElementById("areaOfTrape")
-    const areaOfParallel = document.getElementById("areaOfParallel")
+    const indexPic = document.getElementById
     const simpleCalculator = document.getElementById("simpleCalculator")
       
     
